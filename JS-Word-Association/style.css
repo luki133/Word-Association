@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #DEC3BE;
+  
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.questions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.questionBox{
+    background: rgb(21, 21, 21);
+    margin: 15px;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 0 40px 0 40px;
+}
+
+.questionBox h1{
+    text-align: left;
+    color: rgb(177, 136, 211);
+}
+
+.questionButtons{
+    display: flex;
+    flex-direction: row;
+}
+
+.questionButton{
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(75, 134, 111);
+    color: white;
+    cursor: pointer;
+}
+
+.questionButton:disabled{
+    background-color: rgb(121, 121, 121);
+    color: rgb(136, 134, 134);
+}
+
+.answerDisplay{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerDisplay.correct {
+    color: rgb(211, 211, 117);
+}
+
+.answerDisplay.wrong {
+    color: rgb(211, 134, 117);
+}
